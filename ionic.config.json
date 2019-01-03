@@ -1,0 +1,11 @@
+{
+  "defaultProject": "app",
+  "projects": {
+    "app": {
+      "name": "app",
+      "integrations": {},
+      "type": "angular",
+      "root": "projects/mobile-app"
+    }
+  }
+}
