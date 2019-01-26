@@ -1,12 +1,12 @@
 # Angular-Ionic-Apps
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3 and [Ionic CLI](https://github.com/ionic-team/ionic-cli) version 4.9.0.
 
 ## Steps to create this project
 ### Angular app
 1. Global installation of the Angular CLI: 
 
-    `$ npm install @angular/cli@7.1.4 --global` or `$ npm i @angular/cli@7.1.4 -g`
+    `$ npm install @angular/cli@7.2.3 --global` or `$ npm i @angular/cli@7.2.3 -g`
 
 2. Create a new angular workspace with no default application:
 
@@ -34,34 +34,30 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Ionic app
 1. Global installation of the Ionic CLI: 
 
-    `$ npm install ionic@4.6.0 --global` or `$ npm i ionic@4.6.0 -g`
+    `$ npm install ionic@4.9.0 --global` or `$ npm i ionic@4.9.0 -g`
 
 2. Create the file `ionic.config.json` in the default workspace folder.
 
     More information:
-    - [Ionic 4 - Multi-app projects](https://beta.ionicframework.com/docs/cli/configuration#multi-app-projects)
+    - [Ionic 4 - Multi-app projects](https://ionicframework.com/docs/cli/configuration/#multi-app-projects)
 
-3. Create a new ionic applicaion inside of the workspace:
+3. Open the folder `./projects/`:
+
+    `$ cd projects/`    
+
+4. Create a new ionic applicaion inside of the workspace:
 
     `$ ionic start mobile-app --no-deps`
 
-4. Move the new created folder `/mobile-app/` into the `/projects/` folder.
-
 5. Rename the project `mobile-app` to `app` in the file `ionic.config.json`.
 
-6. Also change the path of the `app` project to `"root": "projects/mobile-app"` in the file `ionic.config.json`.
+6. Go the `mobile-app` folder with the command `$ cd .\projects\mobile-app\`.
 
-7. Go the `mobile-app` folder with the command `$ cd .\projects\mobile-app\`.
-
-8. Then install all dependencies of the `mobile-app` project:
+7. Then install all dependencies of the `mobile-app` project:
     
     `$ npm install` or `$ npm i`
 
-9. Go back to the workspace folder `/angular-ionic-apps/`:
-
-    `$ cd ../..`
-
-10. Then start the ionic projec:
+8. Then start the ionic projec:
 
     `$ ionic serve --project=app`
 
